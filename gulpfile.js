@@ -79,15 +79,6 @@ gulp.task('script', () => {
         }).then(() => {
             // 待 rollup 打包 js 完毕之后，再进行如下的处理：
             gulp.src('./release/wangEditor.js')
-                // inline css
-                .pipe(gulpReplace(/__INLINE_CSS__/gm, function () {
-                    // 读取 css 文件内容
-                    var filePath = path.resolve(__dirname, 'release', 'wangEditor.css')
-                    var content = fs.readFileSync(filePath).toString('utf-8')
-                    // 替换 \n \ ' 三个字符
-                    content = content.replace(/\n/g, '').replace(/\\/g, '\\\\').replace(/'/g, '\\\'')
-                    return content
-                }))
                 .pipe(gulp.dest('./release'))
                 .pipe(sourcemaps.init())
                 // 压缩
