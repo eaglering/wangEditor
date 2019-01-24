@@ -1,12 +1,12 @@
 {
-  "name": "wangeditor",
+  "name": "m-wangeditor",
   "title": "wangEditor",
   "version": "3.1.1",
   "description": "wangEditor - 基于javascript和css开发的 web 富文本编辑器， 轻量、简洁、易用、开源免费",
   "homepage": "http://wangeditor.github.io/",
   "author": {
-    "name": "wangfupeng1988",
-    "url": "https://github.com/wangfupeng1988"
+    "name": "eaglering",
+    "url": "https://github.com/eaglering"
   },
   "keywords": [
     "wangEditor",
